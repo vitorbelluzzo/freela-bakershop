@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Baker Shop</title>
 </head>
-<body>
-  <header class="bg-[#5D2501]">
+<style>
+  body {
+    font-family: "Cabin", sans-serif;
+  }
+</style>
+<body > 
+  <header class="bg-[#5D2501] fixed w-full " id="">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
@@ -17,19 +26,22 @@
           </a>
         </div>
   
-        <div class="hidden md:block">
+        <div class="hidden md:block ">
           <nav aria-label="Global">
-            <ul class="flex items-center gap-6 text-sm">
-              <li>
-                <a class="text-white transition hover:text-white/75" href="#"> Cardápio </a>
+            <ul class="flex items-center gap-9 text-sm">
+              <li class="flex ">
+                <a class="text-white transition hover:text-white/75 font-bold" href="#"> Home </a>
+              </li>
+              <li class="flex  ">
+                <a class="text-white transition hover:text-white/75 font-bold" href="#cardapio"> Cardápio </a>
               </li>
   
               <li>
-                <a class="text-white transition hover:text-white/75" href="#"> Onde comprar </a>
+                <a class="text-white transition hover:text-white/75 font-bold" href=  "#"> Onde comprar </a>
               </li>
   
               <li>
-                <a class="text-white transition hover:text-white/75" href="#"> Sobre nós </a>
+                <a class="text-white transition hover:text-white/75 font-bold" href="#"> Sobre nós </a>
               </li>
   
             </ul>
@@ -37,32 +49,146 @@
         </div>
   
         <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
-           
+          
   
-            <div class="hidden sm:flex">
-              
-            </div>
-          </div>
-  
-          <div class="block md:hidden">
-            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+          <div class="block md:hidden ">
+            <nav aria-label="Global">
+              <ul class="flex items-center gap-6 text-sm">
+                <li >
+                  <a class="text-white transition hover:text-white/75 text-xl" href="#"> <i class="ph ph-book-open-text "></i> </a>
+                </li>
+    
+                <li>
+                  <a class="text-white text-xl transition hover:text-white/75" href="#cardapio"> <i class="ph ph-storefront"></i> </a>
+                </li>
+    
+                <li>
+                  <a class="text-white text-xl transition hover:text-white/75" href="#"> <i class="ph ph-users-three"></i>
+
+                  </a>
+                </li>
+    
+              </ul>
+            </nav>
+            
+            
           </div>
         </div>
       </div>
     </div>
   </header>
+
+
+<section id="" class="pt-12">
+  <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <div class="bg-[#5D2501]  p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto text-center flex flex-col items-center justify-center">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">
+            Delícias Feitas com Amor
+          </h2>
+
+          <p class="hidden text-white/90 sm:mt-4 sm:block">
+            Descubra a doçura em cada fatia! Na Bollo de Bolo, transformamos ingredientes de alta qualidade em obras-primas deliciosas. Explore nossa variedade de sabores e encante-se com a arte da confeitaria. 
+          </p>
+
+          <div class="mt-4 md:mt-8">
+            <a
+              href="#"
+              class="inline-block rounded border border-white px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-white "
+            >
+              Conheça nosso cardápio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:grid-cols-2">
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="h-40 w-full object-cover sm:h-56 md:h-full"
+        />
+
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="h-40 w-full object-cover sm:h-56 md:h-full"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-2" id="cardapio">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-1 lg:items-stretch">
+      <div class="grid place-content-center rounded  p-6 sm:p-8">
+        <div class="mx-auto max-w-md text-center ">
+          <header class="max-w-screen-xl ">
+            <h2 class="text-xl font-bold text-[#FD5D01] sm:text-3xl">Cardápio</h2>
+
+            <p class="mt-4 text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet
+              provident nulla error!
+            </p>
+          </header>
+
+          <a
+            href="#"
+            class="mt-8 inline-block rounded border border-gray-900 bg-gray-900 px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring"
+          >
+            Shop All
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-2 lg:py-8">
+        <ul class="grid grid-cols-2 gap-4">
+          <li>
+            <a href="#" class="group block">
+              <img
+                src="https://images.unsplash.com/photo-1562440499-64c9a111f713?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt=""
+                class="aspect-square w-full rounded object-cover"
+              />
+
+              <div class="mt-3">
+                <h3
+                  class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4"
+                >
+                  Simple Watch
+                </h3>
+
+                <p class="mt-1 text-sm text-gray-700">$150</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="group block">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1598&q=80"
+                alt=""
+                class="aspect-square w-full rounded object-cover"
+              />
+
+              <div class="mt-3">
+                <h3
+                  class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4"
+                >
+                  Simple Watch
+                </h3>
+
+                <p class="mt-1 text-sm text-gray-700">$150</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
   
 </body>
+
 </html>
