@@ -1,260 +1,523 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Baker Shop</title>
-</head>
-<style>
-  header {
-    font-family: "Cabin", serif;
-    
-    
-  }
-  /* #bannerText {
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/Bollo de Bolo.jpg" type="image/x-icon">
+
+    <title>Bollo de bolo</title>
+  </head>
+  <style>
+    header {
+      font-family: "Cabin", serif;
+    }
+    /* #bannerText {
      background-image: url(./img/papel-amassado-branco-close-up-fundo-de-textura_99266-447.avif);
     background-repeat: no-repeat;
     background-size: cover;
 } */
+  </style>
+  <body>
+    <!-- finalizado -->
+    <header class="bg-[#5D2501]  w-full" id="">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12">
+            <a class="block text-teal-600" href="#">
+              <span class="sr-only">Home</span>
+              <img src="./img/Logo.png" class="w-20" alt="" />
+            </a>
+          </div>
 
-</style>
-<body > 
-  <!-- finalizado -->
-  <header class="bg-[#5D2501] fixed w-full " id="">
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 items-center justify-between">
-        <div class="md:flex md:items-center md:gap-12">
-          <a class="block text-teal-600" href="#">
-            <span class="sr-only">Home</span>
-           <img src="./img/Logo.png" class="w-20" alt="">
-          </a>
-        </div>
-  
-        <div class="hidden md:block ">
-          <nav aria-label="Global">
-            <ul class="flex items-center gap-9 text-sm">
-              <li class="flex ">
-                <a class="text-white transition hover:text-white/75 font-bold" href="#"> Home </a>
-              </li>
-              <li class="flex  ">
-                <a class="text-white transition hover:text-white/75 font-bold" href="#cardapio"> Cardápio </a>
-              </li>
-  
-              <li>
-                <a class="text-white transition hover:text-white/75 font-bold" href=  "#"> Onde comprar </a>
-              </li>
-  
-              <li>
-                <a class="text-white transition hover:text-white/75 font-bold" href="#"> Sobre nós </a>
-              </li>
-  
-            </ul>
-          </nav>
-        </div>
-  
-        <div class="flex items-center gap-4">
-          
-  
-          <div class="block md:hidden ">
+          <div class="hidden md:block">
             <nav aria-label="Global">
-              <ul class="flex items-center gap-6 text-sm">
-                <li >
-                  <a class="text-white transition hover:text-white/75 text-xl" href="#"> <i class="ph ph-house"></i></a>
-                </li>               
-                <li >
-                  <a class="text-white transition hover:text-white/75 text-xl" href="#cardapio"> <i class="ph ph-book-open-text "></i> </a>
-                </li>
-    
-                <li>
-                  <a class="text-white text-xl transition hover:text-white/75" href="#ondeComprar"> <i class="ph ph-storefront"></i> </a>
-                </li>
-    
-                <li>
-                  <a class="text-white text-xl transition hover:text-white/75" href="#sobreNos"><i class="ph ph-users-three"></i>
-
+              <ul class="flex items-center gap-9 text-sm">
+                <li class="flex">
+                  <a
+                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
+                    href="#home"
+                  >
+                    Home
                   </a>
                 </li>
-    
+                <li class="flex">
+                  <a
+                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
+                    href="#cardapio"
+                  >
+                    Cardápio
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
+                    href="#sobrenos"
+                  >
+                  Sobre nós
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
+                    href="#contato"
+                  >
+                    
+                    Contato
+                  </a>
+                </li>
               </ul>
             </nav>
-            
-            
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="block md:hidden">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a
+                      class="text-white transition hover:text-white/75 text-xl"
+                      href="#"
+                    >
+                      <i class="ph ph-house"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-white transition hover:text-white/75 text-xl"
+                      href="#cardapio"
+                    >
+                      <i class="ph ph-book-open-text"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white text-xl transition hover:text-white/75"
+                      href="#sobrenos"
+                    >
+                    <i class="ph ph-users-three"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-white text-xl transition hover:text-white/75"
+                      href="#contato"
+                    >
+                    <i class="ph ph-phone"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-
-<!-- finalizado -->
-  <section id="" class="pt-12">
-  <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-      <div id="bannerText" class="bg-[#EBEABB] p-8 md:p-12 lg:px-16 lg:py-24 rounded ">
-        <div class="mx-auto text-center flex flex-col items-center justify-center">
-          <h2 class="text-3xl font-bold sm:text-4xl text-orange-500">
-            Delícias Feitas com Amor
-          </h2>
-
-          <p class="hidden text-black/90 sm:mt-4 sm:block">
-            Bem-vindo ao mundo encantado do Bollo de Bolo, onde os sabores se encontram em uma dança harmoniosa com a arte da confeitaria. Entre em nossa loja e deixe-se envolver pela tentação irresistível de nossos bolos artesanais, criados com paixão e cuidado meticuloso. Cada mordida é uma experiência sensorial única, onde os ingredientes de alta qualidade se unem para criar verdadeiras obras-primas gastronômicas. Seja para celebrar ocasiões especiais ou apenas para satisfazer um desejo doce, o Bollo de Bolo é o destino perfeito para os amantes da boa comida e da delicadeza dos doces. Venha fazer parte dessa jornada de sabores e descubra por que somos o destino preferido dos apreciadores de bolos. 
-          </p>
-
-          <div class="mt-4 md:mt-8">
-            <a
-              href="#cardapio"
-              class="inline-block rounded bg-orange-500 px-12 py-3 text-sm font-medium  transition hover:bg-white-50 text-white rounded-3xl"
+    <!-- finalizado -->
+    <section id="home" class="pt-12" >
+      <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <div
+            id="bannerText"
+            class="bg-[#EBEABB] p-8 md:p-12 lg:px-16 lg:py-24 rounded"
+          >
+            <div
+              class="mx-auto text-center flex flex-col items-center justify-center"
             >
-              Conheça nosso cardápio
+              <h2 class="text-3xl font-bold sm:text-4xl text-orange-500 font-serif italic">
+                Delícias Feitas com Amor
+              </h2>
+
+              <p class="hidden text-black/90 sm:mt-4 sm:block">
+                Bem-vindo ao mundo encantado do Bollo de Bolo, onde os sabores
+                se encontram em uma dança harmoniosa com a arte da confeitaria.
+                Entre em nossa loja e deixe-se envolver pela tentação
+                irresistível de nossos bolos artesanais, criados com paixão e
+                cuidado meticuloso. Cada mordida é uma experiência sensorial
+                única, onde os ingredientes de alta qualidade se unem para criar
+                verdadeiras obras-primas gastronômicas. Seja para celebrar
+                ocasiões especiais ou apenas para satisfazer um desejo doce, o
+                Bollo de Bolo é o destino perfeito para os amantes da boa comida
+                e da delicadeza dos doces. Venha fazer parte dessa jornada de
+                sabores e descubra por que somos o destino preferido dos
+                apreciadores de bolos.
+              </p>
+
+              <div class="mt-4 md:mt-8">
+                <a
+                  href="#cardapio"
+                  class="inline-block rounded bg-orange-500 px-12 py-3 text-sm font-medium transition hover:bg-white-50 text-white rounded-3xl"
+                >
+                  Conheça nosso cardápio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:grid-cols-2">
+            <img
+              alt=""
+              src="./img/1.jpg"
+              class="h-40 w-full object-cover sm:h-56 md:h-full rounded"
+            />
+
+            <img
+              alt=""
+              src="./img/5.jpg"
+              class="h-40 w-full object-cover sm:h-56 md:h-full rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- finalizado -->
+    <section id="cardapio">
+      <div
+        class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16" >
+        <div
+          class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
+        >
+          <div
+            class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right"
+          >
+            <h2 class="text-3xl font-bold sm:text-4xl text-orange-500 font-serif italic">
+              Nosso Cardápio
+            </h2>
+
+            <p class="mt-4 text-gray-600">
+              Na Bollo de Bolo, a paixão pela confeitaria se traduz em mais de
+              50 variedades irresistíveis de bolos, cada um preparado com
+              ingredientes selecionados e um toque de amor. De tradicionais a
+              inovadores, temos a opção perfeita para qualquer ocasião!
+            </p>
+
+            <a
+              href="#imagens"
+              class="mt-8 inline-block rounded bg-[#5D2501] px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 rounded-3xl focus:outline-none focus:ring focus:ring-yellow-400"
+            >
+              Confira algumas imagens
+            </a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <a
+              class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+            >
+              <span class="inline-block rounded-lg bg-gray-50 p-3">
+                <img src="./img/cake.svg" class="size-6" alt="" />
+              </span>
+
+              <h2 class="mt-2 font-bold text-orange-500">
+                Bollos Tradicionais
+              </h2>
+
+              <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Delicie-se com nossos clássicos atemporais, perfeitos para
+                qualquer momento. Sabores que trazem nostalgia e conforto a cada
+                mordida.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+            >
+              <span class="inline-block rounded-lg bg-gray-50 p-3">
+                <img src="./img/cake.svg" class="size-6" alt="" />
+              </span>
+
+              <h2 class="mt-2 font-bold text-orange-500">Bollos Diversos</h2>
+
+              <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Descubra a diversidade em cada fatia! Uma seleção de bolos para
+                todos os gostos, combinando criatividade e sabor.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+            >
+              <span class="inline-block rounded-lg bg-gray-50 p-3">
+                <img src="./img/cake.svg" class="size-6" alt="" />
+              </span>
+
+              <h2 class="mt-2 font-bold text-orange-500">Bollos Especiais</h2>
+
+              <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Para momentos únicos, nossos bolos especiais são verdadeiras
+                obras de arte culinária. Surpreenda-se com combinações
+                sofisticadas e exclusivas.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+            >
+              <span class="inline-block rounded-lg bg-gray-50 p-3">
+                <img src="./img/cake.svg" class="size-6" alt="" />
+              </span>
+
+              <h2 class="mt-2 font-bold text-orange-500">Bollos Diet</h2>
+
+              <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Sabor e saúde em perfeita harmonia. Nossos bolos diet são ideais
+                para quem busca uma opção deliciosa sem abrir mão da qualidade
+                nutricional.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+            >
+              <span class="inline-block rounded-lg bg-gray-50 p-3">
+                <img src="./img/cake.svg" class="size-6" alt="" />
+              </span>
+
+              <h2 class="mt-2 font-bold text-orange-500">Bollos Salgados</h2>
+
+              <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Uma inovação para o seu paladar! Explore nossos bolos salgados,
+                uma deliciosa alternativa para quem adora novidades.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+            >
+              <span class="inline-block rounded-lg bg-gray-50 p-3">
+                <img src="./img/cake.svg" class="size-6" alt="" />
+              </span>
+
+              <h2 class="mt-2 font-bold text-orange-500">Bollos Piscina</h2>
+
+              <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Frescor e diversão em cada pedaço. Perfeitos para festas e
+                encontros ao ar livre, nossos bolos piscina são leves e
+                refrescantes.
+              </p>
             </a>
           </div>
         </div>
-      </div>
+        
 
-      <div class="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:grid-cols-2">
-        <img
-          alt=""
-          src="./items/Assets - Bollo de Bolo/Imagens/10533453_525721827604371_2658780329281769722_n editada.png"
-          class="h-40 w-full object-cover sm:h-56 md:h-full rounded"
-        />
-
-        <img
-          alt=""
-          src="./items/Assets - Bollo de Bolo/Imagens/12063806_532203573622863_1511675365815823732_n - Copia.jpg"
-          class="h-40 w-full object-cover sm:h-56 md:h-full rounded"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="cardapio">
-  <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-      <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-        <h2 class="text-3xl font-bold sm:text-4xl text-orange-500">Nosso Cardápio</h2>
-
-        <p class="mt-4 text-gray-600">
-          Na Bollo de Bolo, a paixão pela confeitaria se traduz em mais de 50 variedades irresistíveis de bolos, cada um preparado com ingredientes selecionados e um toque de amor. De tradicionais a inovadores, temos a opção perfeita para qualquer ocasião!
-        </p>
-
-        <a
-          href="#"
-          class="mt-8 inline-block rounded bg-[#5D2501] px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 rounded-3xl focus:outline-none focus:ring focus:ring-yellow-400"
-        >
-          Get Started Today
-        </a>
-      </div>
-
-      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-32">
+          <div id="imagens">
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/1.jpg" alt="">
+          </div>
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/2.jpg" alt="">
+          </div>
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/3.jpg" alt="">
+          </div>
+         
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/5.jpg" alt="">
+          </div>
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/6.jpg" alt="">
+          </div>
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/7.jpg" alt="">
+          </div>
           
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <img src="./img/cake.svg" class="size-6" alt="">
-          </span>
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/9.jpg" alt="">
+          </div>
+          
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/11.jpg" alt="">
+          </div>
+          <div>
+            <img class="w-full h-72 object-cover rounded-lg" src="./img/13.jpg" alt="">
+          </div>
+          
+        </div>
+        
 
-          <h2 class="mt-2 font-bold text-orange-500">Bollos Tradicionais
-          </h2>
 
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Delicie-se com nossos clássicos atemporais, perfeitos para qualquer momento. Sabores que trazem nostalgia e conforto a cada mordida.
-          </p>
-        </a>
+      </div>
+    </section>
 
+ <!-- finalizado -->
+<section id="sobrenos" class="overflow-hidden max-w-7xl mx-auto sm:grid sm:grid-cols-2 sm:items-center" >
+  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+      <h2 class="text-3xl font-bold sm:text-4xl text-orange-500 font-serif italic">
+      Sobre nós
+      </h2>
+
+      <p class="hidden text-gray-500 md:mt-4 md:block">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
+        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
+        quisque ut interdum tincidunt duis.
+      </p>
+
+      <div class="mt-4 md:mt-8">
         <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-         
+          href="#contato"
+          class="inline-block rounded bg-orange-500 px-12 py-3 text-sm font-medium transition hover:bg-white-50 text-white rounded-3xl"
         >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <img src="./img/cake.svg" class="size-6" alt="">
-          </span>
-
-          <h2 class="mt-2 font-bold text-orange-500">Bollos Diversos
-          </h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Descubra a diversidade em cada fatia! Uma seleção de bolos para todos os gostos, combinando criatividade e sabor.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-         
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <img src="./img/cake.svg" class="size-6" alt="">
-          </span>
-
-          <h2 class="mt-2 font-bold text-orange-500">Bollos Especiais
-          </h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Para momentos únicos, nossos bolos especiais são verdadeiras obras de arte culinária. Surpreenda-se com combinações sofisticadas e exclusivas.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-         
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <img src="./img/cake.svg" class="size-6" alt="">
-          </span>
-
-          <h2 class="mt-2 font-bold text-orange-500">Bollos Diet
-          </h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Sabor e saúde em perfeita harmonia. Nossos bolos diet são ideais para quem busca uma opção deliciosa sem abrir mão da qualidade nutricional.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-         
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <img src="./img/cake.svg" class="size-6" alt="">
-          </span>
-
-          <h2 class="mt-2 font-bold text-orange-500">Bollos Salgados
-          </h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Uma inovação para o seu paladar! Explore nossos bolos salgados, uma deliciosa alternativa para quem adora novidades.
-          </p>
-        </a>
-
-        <a
-          class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-          href="#"
-        >
-          <span class="inline-block rounded-lg bg-gray-50 p-3">
-            <img src="./img/cake.svg" class="size-6" alt="">
-          </span>
-
-          <h2 class="mt-2 font-bold text-orange-500">Bollos Piscina</h2>
-
-          <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-            Frescor e diversão em cada pedaço. Perfeitos para festas e encontros ao ar livre, nossos bolos piscina são leves e refrescantes.
-          </p>
+          Entre em contato
         </a>
       </div>
     </div>
   </div>
+
+  <img
+    alt=""
+    src="./img/Bollo de Bolo.jpg"
+    class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+  />
 </section>
 
-  
-</body>
+ <!-- finalizado -->
+    <section class=" py-20 md:py-32 overflow-hidden" id="contato">
+      <div class="px-4 mx-auto">
+        <div class="max-w-7xl mx-auto">
+          <div class="max-w-2xl text-center mx-auto mb-10">
+            <h1 class="font-heading text-5xl xs:text-6xl font-bold text-gray-900 ">
+              
+              <span class="font-serif italic text-orange-500 mb-5 flex mx-auto justify-center">Contato</span>
+            </h1>
+            <p class="text-xl text-gray-500 font-semibold">Fale Conosco e faça sua encomenda!</p>
+          </div>
+          <ul class=" flex justify-center gap-6 md:gap-8 items-center ">
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Facebook</span>
+                <i class="ph ph-facebook-logo text-5xl"></i>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Instagram</span>
+                <i class="ph ph-instagram-logo text-5xl"></i>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only"></span>
+                <i class="ph ph-whatsapp-logo text-5xl"></i>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Ifood</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" class="text-5xl" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8.428 1.67c-4.65 0-7.184 4.149-7.184 6.998c0 2.294 2.2 3.299 4.25 3.299l-.006-.006c4.244 0 7.184-3.854 7.184-6.998c0-2.29-2.175-3.293-4.244-3.293m11.328 0c-4.65 0-7.184 4.149-7.184 6.998c0 2.294 2.2 3.299 4.25 3.299l-.006-.006C21.061 11.96 24 8.107 24 4.963c0-2.29-2.18-3.293-4.244-3.293m-5.584 12.85l2.435 1.834c-2.17 2.07-6.124 3.525-9.353 3.17A8.91 8.91 0 0 1 .23 14.541H0a9.6 9.6 0 0 0 8.828 7.758c3.814.24 7.323-.905 9.947-3.13l-.004.007l1.08 2.988l1.555-7.623l-7.234-.02Z"/></svg>
+              </a>
+            </li>
+      
+            
+          </ul>
+        
+          <div class="rounded-4xl overflow-hidden">
+            <iframe class="w-full h-50 mt-20" id="gmap_canvas"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d228.68435742946556!2d-46.7002425!3d-23.4983205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8520b64462f%3A0x5bbd8a3a2e0e675d!2sR.%20Francisco%20Pedroso%2C%20223%20-%20Moinho%20Velho%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002960-010!5e0!3m2!1spt-BR!2sbr!4v1715918278458!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer class="bg-[#5D2501]">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="text-teal-600">
+            <img src="./img/Logo.png" class="w-40" alt="">
+          </div>
+    
+          <ul class=" flex justify-center gap-6 md:gap-8 items-center ">
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-white/75"
+              >
+                <span class="sr-only">Facebook</span>
+                <i class="ph ph-facebook-logo text-3xl"></i>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-white/75"
+              >
+                <span class="sr-only">Instagram</span>
+                <i class="ph ph-instagram-logo text-3xl"></i>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-white/75"
+              >
+                <span class="sr-only"></span>
+                <i class="ph ph-whatsapp-logo text-3xl"></i>
+              </a>
+            </li>
+      
+            <li>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white transition hover:text-white/75"
+              >
+                <span class="sr-only">Ifood</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" class="text-3xl" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8.428 1.67c-4.65 0-7.184 4.149-7.184 6.998c0 2.294 2.2 3.299 4.25 3.299l-.006-.006c4.244 0 7.184-3.854 7.184-6.998c0-2.29-2.175-3.293-4.244-3.293m11.328 0c-4.65 0-7.184 4.149-7.184 6.998c0 2.294 2.2 3.299 4.25 3.299l-.006-.006C21.061 11.96 24 8.107 24 4.963c0-2.29-2.18-3.293-4.244-3.293m-5.584 12.85l2.435 1.834c-2.17 2.07-6.124 3.525-9.353 3.17A8.91 8.91 0 0 1 .23 14.541H0a9.6 9.6 0 0 0 8.828 7.758c3.814.24 7.323-.905 9.947-3.13l-.004.007l1.08 2.988l1.555-7.623l-7.234-.02Z"/></svg>
+              </a>
+            </li>
+      
+            
+          </ul>
+        </div>
+    
+     
+    </footer>
+
+    
+  </body>
 </html>
