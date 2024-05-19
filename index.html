@@ -3,117 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   
     <link rel="shortcut icon" href="./img/Bollo de Bolo.jpg" type="image/x-icon">
-
-    <title>Bollo de bolo</title>
+    <title>Bollo de Bolo</title>
+    <style>
+      header {
+        font-family: "Cabin", serif;
+      }
+    </style>
   </head>
-  <style>
-    header {
-      font-family: "Cabin", serif;
-    }
- 
-  </style>
   <body>
     <!-- finalizado -->
-    <header class="bg-[#5D2501]  w-full" id="">
+    <header class="bg-[#5D2501] w-full">
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="#">
               <span class="sr-only">Home</span>
-              <img src="./img/Logo.png" class="w-20" alt="" />
+              <img src="./img/Logo.png" class="w-20" alt="Bollo de Bolo Logo" />
             </a>
           </div>
-
           <div class="hidden md:block">
             <nav aria-label="Global">
               <ul class="flex items-center gap-9 text-sm">
                 <li class="flex">
-                  <a
-                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
-                    href="./index.html"
-                  >
-                    Home
-                  </a>
+                  <a class="text-white transition hover:text-white/75 font-bold font-serif italic" href="./index.html">Home</a>
                 </li>
                 <li class="flex">
-                  <a
-                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
-                    href="./cardapio.html"
-                  >
-                    Cardápio
-                  </a>
+                  <a class="text-white transition hover:text-white/75 font-bold font-serif italic" href="./cardapio.html">Cardápio</a>
                 </li>
-
                 <li>
-                  <a
-                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
-                    href="./sobre.html"
-                  >
-                  Sobre nós
-                  </a>
+                  <a class="text-white transition hover:text-white/75 font-bold font-serif italic" href="./sobre.html">Sobre nós</a>
                 </li>
-
                 <li>
-                  <a
-                    class="text-white transition hover:text-white/75 font-bold font-serif italic"
-                    href="./contato.html"
-                  >
-                    
-                    Contato
-                  </a>
+                  <a class="text-white transition hover:text-white/75 font-bold font-serif italic" href="./contato.html">Contato</a>
                 </li>
               </ul>
             </nav>
           </div>
-
           <div class="flex items-center gap-4">
             <div class="block md:hidden">
               <nav aria-label="Global">
                 <ul class="flex items-center gap-6 text-sm">
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75 text-xl"
-                      href="./index.html"
-                    >
-                      <i class="ph ph-house"></i
-                    ></a>
+                    <a class="text-white transition hover:text-white/75 text-xl" href="./index.html">
+                      <i class="ph ph-house"></i>
+                    </a>
                   </li>
                   <li>
-                    <a
-                      class="text-white transition hover:text-white/75 text-xl"
-                      href="./cardapio.html"
-                    >
+                    <a class="text-white transition hover:text-white/75 text-xl" href="./cardapio.html">
                       <i class="ph ph-book-open-text"></i>
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      class="text-white text-xl transition hover:text-white/75"
-                      href="./sobre.html"
-                    >
-                    <i class="ph ph-users-three"></i>
+                    <a class="text-white text-xl transition hover:text-white/75" href="./sobre.html">
+                      <i class="ph ph-users-three"></i>
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      class="text-white text-xl transition hover:text-white/75"
-                      href="./contato.html"
-                    >
-                    <i class="ph ph-phone"></i>
+                    <a class="text-white text-xl transition hover:text-white/75" href="./contato.html">
+                      <i class="ph ph-phone"></i>
                     </a>
                   </li>
                 </ul>
@@ -125,20 +78,14 @@
     </header>
 
     <!-- finalizado -->
-    <section id="home" class="" >
+    <section id="home">
       <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-          <div
-            id="bannerText"
-            class="bg-[#EBEABB] p-8 md:p-12 lg:px-16 lg:py-24 rounded"
-          >
-            <div
-              class="mx-auto text-center flex flex-col items-center justify-center"
-            >
+          <div id="bannerText" class="bg-[#EBEABB] p-8 md:p-12 lg:px-16 lg:py-24 rounded">
+            <div class="mx-auto text-center flex flex-col items-center justify-center">
               <h2 class="text-3xl font-bold sm:text-4xl text-orange-500 font-serif italic">
                 Delícias Feitas com Amor
               </h2>
-
               <p class="hidden text-black/90 sm:mt-4 sm:block">
                 Bem-vindo ao mundo encantado do Bollo de Bolo, onde os sabores
                 se encontram em uma dança harmoniosa com a arte da confeitaria.
@@ -153,78 +100,46 @@
                 sabores e descubra por que somos o destino preferido dos
                 apreciadores de bolos.
               </p>
-
               <div class="mt-4 md:mt-8">
-                <a
-                  href="./cardapio.html"
-                  class="inline-block rounded bg-orange-500 px-12 py-3 text-sm font-medium transition hover:bg-[#5D2501] text-white rounded-3xl"
-                >
+                <a href="./cardapio.html" class="inline-block rounded bg-orange-500 px-12 py-3 text-sm font-medium transition hover:bg-[#5D2501] text-white rounded-3xl">
                   Conheça nosso cardápio
                 </a>
               </div>
             </div>
           </div>
-
           <div class="grid grid-cols-2 gap-4 lg:grid-cols-1 lg:grid-cols-2">
-            <img
-              alt=""
-              src="./img/1.jpg"
-              class="h-40 w-full object-cover sm:h-56 md:h-full rounded"
-            />
-
-            <img
-              alt=""
-              src="./img/5.jpg"
-              class="h-40 w-full object-cover sm:h-56 md:h-full rounded"
-            />
+            <img alt="Imagem de bolo 1" src="./img/1.jpg" class="h-40 w-full object-cover sm:h-56 md:h-full rounded" />
+            <img alt="Imagem de bolo 2" src="./img/5.jpg" class="h-40 w-full object-cover sm:h-56 md:h-full rounded" />
+            <img alt="Imagem de bolo 3" src="./img/7.jpg" class="md:hidden lg:hidden w-full object-cover sm:h-56 md:h-full rounded" />
+            <img alt="Imagem de bolo 4" src="./img/12.jpg" class="md:hidden lg:hidden w-full object-cover sm:h-56 md:h-full rounded" />
           </div>
         </div>
       </div>
     </section>
 
-
-
-    <footer class="bg-[#5D2501]">
+    <footer class="bg-[#5D2501] border-[#5D2501]">
       <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <div class="text-white pb-3">
-            <img src="./img/Logo.png" class="w-40 mx-auto" alt="">
+            <img src="./img/Logo.png" class="w-40 mx-auto" alt="Bollo de Bolo Logo">
             <span class="mx-auto flex justify-center">© 2024 Bollo de bolo.</span>
           </div>
-    
-          <ul class=" flex justify-center gap-6 md:gap-8 items-center ">
+          <ul class="flex justify-center gap-6 md:gap-8 items-center">
             <li>
-              <a
-                href="https://www.facebook.com/BolloDeBolo/"
-                
-                target="_blank"
-                class="text-white transition hover:text-white/75"
-              >
+              <a href="https://www.facebook.com/BolloDeBolo/" target="_blank" class="text-white transition hover:text-white/75">
                 <span class="sr-only">Facebook</span>
                 <i class="ph ph-facebook-logo text-3xl"></i>
               </a>
             </li>
-      
             <li>
-              <a
-                href="https://www.instagram.com/bollodebolo/"
-                
-                target="_blank"
-                class="text-white transition hover:text-white/75"
-              >
+              <a href="https://www.instagram.com/bollodebolo/" target="_blank" class="text-white transition hover:text-white/75">
                 <span class="sr-only">Instagram</span>
                 <i class="ph ph-instagram-logo text-3xl"></i>
               </a>
             </li>
-      
             <li>
-              <a
-                href="whatsapp://send?text=Olá, tudo bem?&phone=+5511945447439"
-                
-                target="_blank"
-                class="text-white transition hover:text-white/75"
-              >
-                <span class="sr-only"></span>
+              <a href="whatsapp://send?text=Olá, tudo bem?&phone=+5511945447439" target="_blank" class="text-white transition hover:text-white/75">
+                <span class="sr-only">WhatsApp</span>
                 <i class="ph ph-whatsapp-logo text-3xl"></i>
               </a>
             </li>
@@ -250,3 +165,5 @@
     
   </body>
 </html>
+
+           
